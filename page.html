@@ -1,0 +1,55 @@
+<html>
+<head></head>
+<body>
+
+<div class="connexion">
+
+<input placeholder="Name" class="name">
+<input placeholder="Passeword" type="password" class="passeword">
+<button class="press" id="pressed">Open the door</button>
+
+</div>
+</body>
+<style>
+.connexion
+{
+margin:20 px;
+position:absolute;
+background-color:black;
+width:400px;
+height:400px;
+top:200px;
+right:600px;
+}
+
+
+
+.press
+{background-color:green;
+position:relative;
+top:1px;
+left:5px;
+height:40px;
+width:300px;
+
+}
+.name
+{position:relative;
+top:2px;
+left:5px;
+height:40px;
+width:300px;
+}
+.passeword
+{position:relative;
+top:3px;
+left:5px;
+height:40px;
+width:300px;
+}
+</style>
+<script>
+element=document.getElementById('pressed');
+element.addEventListener('click',function () {alert ("you opened the door");});
+</script>
+</html>
